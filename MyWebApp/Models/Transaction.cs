@@ -18,6 +18,7 @@ public class Transaction
     public DateTime Date{get;set;}=DateTime.Now;
 
     public int FriendId{get;set;}//dastabasede tutulur.
+    
     [ForeignKey("FriendId")]
     public Friend? Friend{get;set;}//databasede tutulmaz ama transaction.friend.name yapabilirsin.
 }
